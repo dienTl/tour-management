@@ -13,6 +13,7 @@ export const index =  async (req:Request,res:Response) =>{
   });
   console.log(tours)
   res.render("client/pages/tours/index",{
+    pageTitle:"đây là trang danh sách tour",
     tours: tours
   })
 }
