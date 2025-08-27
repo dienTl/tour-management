@@ -1,9 +1,9 @@
 import {Router} from "express"
 
-const route : Router = Router()
+const router : Router = Router()
 
 import * as controller from "../../controllers/client/tour.controllers"
 
-route.get("/",controller.index)
+router.get("/",controller.index)
 
-export const tourRoutes : Router = route
+export const tourRoutes : Router = router

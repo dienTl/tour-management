@@ -11,6 +11,8 @@ app.set("views", "./views")
 app.set("view engine","pug");
 
 
+app.use(express.static("public"))
+
 //client Route
 clientRoutes(app)
 
